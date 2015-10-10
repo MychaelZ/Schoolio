@@ -1,4 +1,3 @@
-var Promise = require('bluebird');
 var Models = require('../db.js').Models;
 var bcrypt = require('bcrypt');
 var Utils = require('../utilities');

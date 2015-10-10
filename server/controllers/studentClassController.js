@@ -1,11 +1,9 @@
 var Models = require('../db.js').Models;
 var Promise = require('bluebird');
-var Utils = require('../utilities.js');
 var helpers = require('../helpers.js');
 
 // MODELS
 var Class = Models.Class;
-var Teacher = Models.Teacher;
 var Student = Models.Student;
 var StudentClass = Models.StudentClass;
 
@@ -58,7 +56,7 @@ module.exports = {
     StudentClass
       .findOne({
         where: {
-          ClassId: id,
+          ClassId: classId,
           StudentId: req.body.StudentId
         }
       })

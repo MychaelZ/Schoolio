@@ -1,5 +1,4 @@
 var LocalStrategy = require('passport-local').Strategy;
-var Utils = require('./utilities.js');
 var bcrypt = require('bcrypt');
 var helpers = require('./helpers');
 
@@ -20,7 +19,7 @@ module.exports = function (passport) {
               user.accountType = student ? 'Student' : 'Teacher';
               return done(null, user);
             }
-            return done(null, false, {message: 'Incorrect password'})
+            return done(null, false, {message: 'Incorrect password'});
           });
         })
         .catch(function(err) {

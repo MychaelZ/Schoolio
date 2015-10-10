@@ -1,7 +1,4 @@
-var Promise = require('bluebird');
-
 var Student = require('./db.js').Models.Student;
-var Teacher = require('./db.js').Models.Teacher;
 var HelpRequest = require('./db.js').Models.HelpRequest;
 
 var socketHandler = function(server) {
@@ -23,7 +20,7 @@ var socketHandler = function(server) {
           })
           .then(function() {
             socket.broadcast.emit('teacherUpdate', data);
-          })
+          });
       }
     });
   });
@@ -50,7 +47,7 @@ var socketHandler = function(server) {
     socket.on('acknowledged', function (question) {
       socket.broadcast.emit('teacherIsComing');
     });
-  })
+  });
 };
 
 module.exports = socketHandler;

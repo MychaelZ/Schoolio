@@ -53,5 +53,5 @@ module.exports = {
           res.status(200).send('Username is already taken!');
         }
       });
-  },
+  }
 };

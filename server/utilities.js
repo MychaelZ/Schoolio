@@ -1,6 +1,3 @@
-var Promise = require('bluebird');
-var Models = require('./db').Models;
-
 module.exports = {
   extend: function () {
     var object = {};

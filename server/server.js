@@ -1,5 +1,4 @@
 var express = require('express');
-var sequelize = require('sequelize');
 var db = require('./db');
 var http = require('http');
 var port = process.env.PORT || 8000;

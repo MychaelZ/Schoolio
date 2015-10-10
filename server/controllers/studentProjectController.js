@@ -1,14 +1,11 @@
 var Models = require('../db.js').Models;
 var Promise = require('bluebird');
-var Utils = require('../utilities.js');
 var helpers = require('../helpers.js');
 
 // MODELS
 var Class = Models.Class;
-var Teacher = Models.Teacher;
 var Student = Models.Student;
 var Project = Models.Project;
-var StudentClass = Models.StudentClass;
 var StudentProject = Models.StudentProject;
 var ClassProject = Models.ClassProject;
 
@@ -57,8 +54,8 @@ module.exports = {
               .map(students, function (student) {
                 return student.addProject(project);
               }),
-              foundClass,
-              project
+            foundClass,
+            project
           ]);
       })
       .then(function(data){
@@ -83,25 +80,25 @@ module.exports = {
   },
 
   unassignProjectFromClass: function (req, res) {
-    var classid   = req.params.classid,
-        projectid = req.params.projectid;
+    var classid   = req.params.classid;
+    var projectid = req.params.projectid;
 
     Class
       .findById(classid)
       .then(function (foundClass) {
         return Promise.all([
-            foundClass.getStudents(),
-            ClassProject
-              .findOne({
-                where: {
-                  ProjectId: projectid,
-                  ClassId: foundClass.id
-                }
-              })
-              .then(function(classProject){
-                return classProject ? classProject.destroy() : null;
-              }) 
-          ]);
+          foundClass.getStudents(),
+          ClassProject
+            .findOne({
+              where: {
+                ProjectId: projectid,
+                ClassId: foundClass.id
+              }
+            })
+            .then(function(classProject){
+              return classProject ? classProject.destroy() : null;
+            }) 
+        ]);
       })
       .spread(function (students) {
         return Promise

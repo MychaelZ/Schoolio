@@ -90,7 +90,7 @@ describe('', function () {
         .sync({force: true})
         .then(function () {
           done();
-        })
+        });
     });
 
   });
@@ -132,7 +132,7 @@ describe('', function () {
             .then(function (count) {
               expect(count).to.equal(1);
               done();
-            })
+            });
         });
     });
 
@@ -178,7 +178,7 @@ describe('', function () {
         .sync({force: true})
         .then(function () {
           done();
-        })
+        });
     });
 
   });
@@ -220,7 +220,7 @@ describe('', function () {
             .then(function (count) {
               expect(count).to.equal(1);
               done();
-            })
+            });
         });
     });
 
@@ -338,7 +338,7 @@ describe('', function () {
         .sync({force: true})
         .then(function () {
           done();
-        })
+        });
     });
 
   });
@@ -381,7 +381,7 @@ describe('', function () {
                 testClass.addStudent(student);
               })
             ]);
-          })
+          });
         })
         .then(function () {
           done();
@@ -405,7 +405,7 @@ describe('', function () {
             .then(function (count) {
               expect(count).to.equal(1);
               done();
-            })
+            });
         });
     });
 
@@ -442,7 +442,7 @@ describe('', function () {
             .then(function (count) {
               expect(count).to.equal(1);
               done();
-            })
+            });
         });
     });
 
@@ -510,7 +510,7 @@ describe('', function () {
             .then(function (count) {
               expect(count).to.equal(1);
               done();
-            })
+            });
         });
     });
 

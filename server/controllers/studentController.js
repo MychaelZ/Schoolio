@@ -3,8 +3,6 @@ var Utils = require('../utilities.js');
 var helpers = require('../helpers.js');
 
 // MODELS
-var Class = Models.Class;
-var Teacher = Models.Teacher;
 var Student = Models.Student;
 
 module.exports = {

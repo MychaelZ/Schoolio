@@ -9,14 +9,11 @@ var HelpRequestController = require('../controllers/helpRequestController.js');
 */
 router.post('/', /*Auth.checkIf('Student'),*/ HelpRequestController.addQuestion);
 
-
 /* Toggles acknowledged and resolved properities
  * req.body -> {teacherId, question}
  * res.data -> {} 
 */
 router.post('/:helpRequestId/:prop', /*Auth.checkIf('Teacher'),*/ HelpRequestController.toggleTrue);
-
-
 
 /* Get all outstanding help requests that haven't been resolved i.e. resolved = false;
  * req.body -> {}
