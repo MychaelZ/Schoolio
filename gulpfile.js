@@ -7,7 +7,7 @@ var sass     = require('gulp-sass');
 gulp.task('mocha', function () {
   return gulp.src('server/test/*.js')
     .pipe(mocha({reporter: 'nyan'}));
-})
+});
 
 gulp.task('bower', function() {
   return bower()
@@ -23,7 +23,7 @@ gulp.task('sass', ['bower'], function () {
 gulp.task('nodemon', function () {
   nodemon({
     script: 'server/server.js'
-  })
+  });
 });
 
 gulp.task('default', ['bower', 'sass']);

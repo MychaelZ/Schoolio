@@ -28,7 +28,7 @@ Feel free to run your instance of Schoolio! Our official deployment is [here](ht
 
 We'd love to see what you build on top of our app.
 
-If you have any suggestions, please submit an [issue](https://github.com/CatatonicWonton/CatatonicWonton/issues).
+If you have any suggestions, please submit an [issue](https://github.com/MychaelZ/Schoolio/issues).
 
 ## Requirements
 

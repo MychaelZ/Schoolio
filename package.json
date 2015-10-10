@@ -1,5 +1,5 @@
 {
-  "name": "catatonic-wonton",
+  "name": "Schoolio",
   "version": "1.0.0",
   "description": "an ed-tech spa",
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CatatonicWonton/CatatonicWonton.git"
+    "url": "git+https://github.com/MychaelZ/Schoolio.git"
   },
   "author": "Jeff Plourd, Adnan Pirzada, Mychael Zuniga, Devon Koch",
   "license": "MIT",
@@ -18,9 +18,9 @@
     "node": "^0.12.2"
   },
   "bugs": {
-    "url": "https://github.com/CatatonicWonton/CatatonicWonton/issues"
+    "url": "https://github.com/MychaelZ/Schoolio/issues"
   },
-  "homepage": "https://github.com/CatatonicWonton/CatatonicWonton#readme",
+  "homepage": "https://github.com/MychaelZ/Schoolio#readme",
   "dependencies": {
     "bcrypt": "*",
     "bluebird": "^2.9.34",

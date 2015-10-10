@@ -1,9 +1,10 @@
 {
-  "name": "CatatonicWonton",
+  "name": "Schoolio",
   "version": "0.0.0",
-  "homepage": "https://github.com/CatatonicWonton/CatatonicWonton",
+  "homepage": "https://github.com/MychaelZ/Schoolio",
   "authors": [
-    "Devon Koch <devon.r.koch@gmail.com>"
+    "Devon Koch <devon.r.koch@gmail.com>",
+    "Mychael Zuniga <mychael.zuniga@yahoo.com>"
   ],
   "moduleType": [
     "node"
